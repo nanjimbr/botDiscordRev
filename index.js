@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
     if (!file.endsWith(".js")) return;
     let props = require(`./commands/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`${commandName} command is loaded.`);
+    console.log(`Commande ${commandName} chargée.`);
     client.commands.set(commandName, props);
   });
 });

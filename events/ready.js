@@ -1,6 +1,6 @@
 
 module.exports = (client) => {
-	console.log('I am ready to serve you!');
+	console.log('Prêt a l\'usage.');
 
 	client.user.setStatus('online');
 

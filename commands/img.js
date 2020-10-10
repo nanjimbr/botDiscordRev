@@ -30,7 +30,7 @@ exports.run = async (client, message, args) => {
     let maximax = urls.length-1;
     let randomimg = getRandomIntInclusive(0, maximax)
     message.channel.send( urls[randomimg] );
-    console.log(message.author.id + " used !img and searched : "+args);
+    console.log(message.author.tag + " used !img and searched : "+args);
     message.delete();
     });
 }

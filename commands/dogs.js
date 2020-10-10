@@ -12,6 +12,6 @@ exports.run = async (client, message, args, tools) => {
     .setTitle("Oh look i found a cuty dog :dog:")
     .setImage(body.url) 
     message.channel.send({embed});
-    console.log(message.author.id + " used !dogs");
+    console.log(message.author.tag + " used !dogs");
     message.delete();
 };

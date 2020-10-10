@@ -23,7 +23,7 @@ module.exports = (client, message) => {
     if (!cmd) return;
 
     if (talkedRecently.has(message.author.id)) {
-        message.channel.send("So fast! Wait a moment please!");
+        message.channel.send("spam pas pls");
     } else {
 
         // Run the command

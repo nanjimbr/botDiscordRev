@@ -4,5 +4,5 @@ module.exports = (client) => {
 
 	client.user.setStatus('online');
 
-	client.user.setActivity('type $help');
+	client.user.setActivity('slt à tous');
 };

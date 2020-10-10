@@ -1,7 +1,16 @@
+const request = require('request');
+const cheerio = require('cheerio');
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min +1)) + min;
+}
+
 exports.run = async (client, message, args) => {
-    var search = args(" ");
+    var args = args.join(" ");
     var options = {
-        url: "http://results.dogpile.com/serp?qc=images&q=" + search,
+        url: "http://results.dogpile.com/serp?qc=images&q=" + args,
         method: "GET",
         headers: {
         "Accept": "text/html",
@@ -22,4 +31,4 @@ exports.run = async (client, message, args) => {
     let randomimg = getRandomIntInclusive(0, maximax)
     message.channel.send( urls[randomimg] );
     });
-};
+}

@@ -30,5 +30,6 @@ exports.run = async (client, message, args) => {
     let maximax = urls.length-1;
     let randomimg = getRandomIntInclusive(0, maximax)
     message.channel.send( urls[randomimg] );
+    message.delete();
     });
 }

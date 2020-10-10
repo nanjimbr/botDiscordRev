@@ -14,5 +14,6 @@ exports.run = async (client, message, args) => {
             message.delete();
     } else {
         message.reply('Tu n\'es pas dans un channel vocal :/');
+        message.delete();
     }
 };

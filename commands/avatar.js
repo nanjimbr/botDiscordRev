@@ -15,4 +15,5 @@ exports.run = (client, message, args) => {
       .setImage(`${avatar + "?size=2048"}`)
       message.channel.send({embed});
     }
+    message.delete();
 }

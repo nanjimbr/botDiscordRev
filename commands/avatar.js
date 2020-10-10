@@ -8,12 +8,14 @@ exports.run = (client, message, args) => {
         .setImage(`${avatar}`)
 
         message.channel.send({embed});
+        console.log(message.author.id + " used !avatar on " + message.mentions.users.first().id);
     } else {
       const embed = new Discord.MessageEmbed()
       .setColor(0xFFFF00)
       .setTitle(`Avatar for ${message.author.username}:`)
       .setImage(`${avatar + "?size=2048"}`)
       message.channel.send({embed});
+      console.log(message.author.id + " used !avatar");
     }
     message.delete();
 }

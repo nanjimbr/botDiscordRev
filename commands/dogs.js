@@ -11,6 +11,7 @@ exports.run = async (client, message, args, tools) => {
     .setColor("#ff9900")
     .setTitle("Oh look i found a cuty dog :dog:")
     .setImage(body.url) 
-    message.channel.send({embed})
+    message.channel.send({embed});
+    console.log(message.author.id + " used !dogs");
     message.delete();
 };

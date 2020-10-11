@@ -32,6 +32,6 @@ exports.run = (client, message, args) => {
           }
         ]
       }
-
+      console.log(message.author.tag + " used !help");
       message.channel.send(embed);
 }

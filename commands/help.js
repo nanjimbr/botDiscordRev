@@ -2,8 +2,6 @@ const { DiscordAPIError, Client } = require("discord.js")
 
 exports.run = (client, message, args) => {
     const exampleEmbed = {
-        "embeds": [
-          {
             "title": "À l'aide !",
             "description": "Voici la liste des commandes du bot, et leurs utilisations.",
             "color": 4718336,
@@ -27,11 +25,7 @@ exports.run = (client, message, args) => {
               {
                 "name": "__!say__ *message*",
                 "value": "Fais dire un message anonymement, par le bot."
-              }
-            ]
-          }
-        ]
-      }
+      }]}
       console.log(message.author.tag + " used !help");
       message.channel.send(exampleEmbed);
 }

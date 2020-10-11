@@ -1,7 +1,7 @@
 const { DiscordAPIError, Client } = require("discord.js")
 
 exports.run = (client, message, args) => {
-    const embed = {
+    const exampleEmbed = {
         "embeds": [
           {
             "title": "À l'aide !",
@@ -33,5 +33,5 @@ exports.run = (client, message, args) => {
         ]
       }
       console.log(message.author.tag + " used !help");
-      message.channel.send(embed);
+      message.channel.send(exampleEmbed);
 }

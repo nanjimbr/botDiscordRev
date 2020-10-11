@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
     const exampleEmbed = new MessageEmbed()
     .setTitle("À l'aide !")
     .setDescription("Voici la liste des commandes du bot, et leurs utilisations.")
-    .setColor('4718336')
+    .setColor('#47ff00')
     .addFields(
         {name: "__!help__", value: "Affiche ce message d'aide."},
         {name: "__!fart__", value: "Ne fonctionne que quand tu es dans un channel vocal, fais faire un pet au bot."},

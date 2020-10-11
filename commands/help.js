@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
         {name: "__!img__ *mot-clé de recherche*", value: "Affiche une image en rapport avec les mots-clés de ta recherche."},
         {name: "__!say__ *message*", value: "Fais dire un message anonymement, par le bot."}
     )
-    channel.send(exampleEmbed);
+    message.channel.send(exampleEmbed);
     console.log(message.author.tag + " used !help");
     
 }

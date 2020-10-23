@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
     .setColor('#47ff00')
     .addFields(
         {name: "__!help__", value: "Affiche ce message d'aide."},
-        {name: "__Sons__", value: "**!aladdin**, ** !allo**, **!anus**, **!aziz**, **!bite**, **!caca**, **!cesoir**, **!cri**, **!doigt**, **!emergency**, **!enorme**, **!fart**, **!fion**, **!golmont**, **!gueule**, **!letsgo**, **!ludo**, **!mort**, **!nu**, **!pain**, **!power**, **!queue**, **!rouge**, **"},
+        {name: "__Sons__", value: "**!aladdin**, **!allo**, **!anus**, **!aziz**, **!bite**, **!caca**, **!cesoir**, **!cri**, **!doigt**, **!emergency**, **!enorme**, **!fart**, **!fion**, **!golmont**, **!gueule**, **!letsgo**, **!ludo**, **!mort**, **!nu**, **!pain**, **!power**, **!queue**, **!rouge**"},
         {name: "__General__", value: "**!avatar**, **!del**, **!img**, **!say**"}
     )
     message.channel.send(exampleEmbed);

@@ -5,8 +5,8 @@ function getRandomIntInclusive(min, max) {
 }
 
 exports.run = async(client, message, args) => {
-    msg = args.join(" ")
-    msg = parseInt(msg)
-    nbr = getRandomIntInclusive(0, msg)
-    message.channel.send(nbr)
+    nbr = getRandomIntInclusive(1, 11)
+    jeux = ["CS:GO","Rocket League","Fall Guys","Golf machin","Phasmophobia","Overwatch","Euro Truck","Cities Skyline","Minecraft","GTA V","Trackmania"]
+    msg = jeux[nbr]
+    message.channel.send(msg)
 }

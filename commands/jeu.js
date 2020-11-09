@@ -5,6 +5,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 exports.run = async(client, message, args) => {
+    message.delete()
     nbr = getRandomIntInclusive(1, 11)
     jeux = ["CS:GO","Rocket League","Fall Guys","Golf machin","Phasmophobia","Overwatch","Euro Truck","Cities Skyline","Minecraft","GTA V","Trackmania"]
     msg = jeux[nbr]

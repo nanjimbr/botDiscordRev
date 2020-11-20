@@ -18,15 +18,15 @@ exports.run = (client, message, args) => {
 
 
 
-    /* const exampleEmbed = new MessageEmbed()
+    const exampleEmbed = new MessageEmbed()
     .setTitle("À l'aide !")
     .setDescription("Voici la liste des commandes du bot, et leurs utilisations.")
     .setColor('#47ff00')
     .addFields(
         {name: "__!help__", value: "Affiche ce message d'aide."},
-        {name: "__Sons__", value: "**!aladdin**, **!allo**, **!anus**, **!aziz**, **!bite**, **!brigitte**, **!caca**, **!cesoir**, **!cri**, **!doigt**, **!emergency**, **!enorme**, **!fart**, **!fion**, **!golmont**, **!gueule**, **!letsgo**, **!ludo**, **!mort**, **!nu**, **!pain**, **!papy**, **!power**, **!queue**, **!rouge**, **!xavier**"},
+        {name: "__Sons__", value: cmds},
         {name: "__General__", value: "**!avatar**, **!del**, **!img**, **!say**"}
     )
     message.channel.send(exampleEmbed);
-    console.log(message.author.tag + " used !help"); */
+    console.log(message.author.tag + " used !help");
 }

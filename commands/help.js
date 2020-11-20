@@ -13,11 +13,6 @@ fs.readdir("./commands/", (err, files) => {
 
 exports.run = (client, message, args) => {
     console.log(cmds);
-
-
-
-
-
     const exampleEmbed = new MessageEmbed()
     .setTitle("À l'aide !")
     .setDescription("Voici la liste des commandes du bot, et leurs utilisations.")

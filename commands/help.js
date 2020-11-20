@@ -7,7 +7,7 @@ fs.readdir("./commands/", (err, files) => {
         if (!file.endsWith(".js")) return;
         let props = require(`../commands/${file}`);
         let commandName = file.split(".")[0];
-        cmds = cmds.push(commandName);
+        cmds.push(commandName);
     });
 });
 

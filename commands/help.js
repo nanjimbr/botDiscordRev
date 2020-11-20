@@ -1,6 +1,6 @@
 const { DiscordAPIError, Client, MessageEmbed } = require("discord.js")
 const fs = require('fs');
-let cmds = [];
+let cmds = ["test"];
 cmds = fs.readdir("./commands/", (err, files) => {
              if (err) return console.error(err);
              files.forEach(file => {

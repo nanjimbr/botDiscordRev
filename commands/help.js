@@ -7,9 +7,9 @@ let cmds = fs.readdir("./commands/", (err, files) => {
                 let props = require(`../commands/${file}`);
                 let commandName = file.split(".")[0];
                 cmds = [cmds+","+commandName];
-                cmds = cmds.shift();
                 });
              });
+             cmds = cmds.shift();
 
 exports.run = (client, message, args) => {
     console.log(cmds);

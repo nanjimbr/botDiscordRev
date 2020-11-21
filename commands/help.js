@@ -18,8 +18,7 @@ exports.run = (client, message, args) => {
     .setColor('#47ff00')
     .addFields(
         {name: "__!help__", value: "Affiche ce message d'aide."},
-        {name: "__Sons__", value: cmds},
-        {name: "__General__", value: "**!avatar**, **!del**, **!img**, **!say**"}
+        {name: "Liste des commandes", value: cmds}
     )
     message.channel.send(exampleEmbed);
     console.log(message.author.tag + " used !help");

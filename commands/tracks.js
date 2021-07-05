@@ -9,5 +9,5 @@ exports.run = (client, message, args) => {
     ).slice(0, 10).join("\n"));
     message.delete();
 }
-    }
+}
     

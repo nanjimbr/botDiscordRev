@@ -6,10 +6,24 @@ const fs = require('fs');
 
 const distube = require('distube');
 
-const player = new distube(client);
+const player = new distube(client, {leaveOnEmpty: true, leaveOnFinish: true});
+
+player.on('initQueue', queue => {
+  queue.autoplay = false;
+})
 
 player.on('playSong', (message, queue, song) => {
-    message.channel.send(`${song.name} passe à la radio!`)
+    let exampleEmbed = new Discord.MessageEmbed()
+    .setColor('#FF0000')
+    .setTitle(song.name)
+    .setAuthor(message.author.username+"#"+message.author.discriminator)
+    .addFields(
+      { name: 'Durée :', value: song.formattedDuration })
+    .setImage(song.thumbnail)
+    .setTimestamp()
+    .setFooter('message Nanji#1337');
+    //message.channel.send(`🎵 *__${song.name}__* passe à la radio! \n ${song.url}`);
+    message.channel.send(exampleEmbed);
 })
 
 client.player = player;

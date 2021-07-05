@@ -4,6 +4,16 @@ const Enmap = require("enmap");
 const client = new Discord.Client();
 const fs = require('fs');
 
+const distube = require('distube');
+
+const player = new distube(client);
+
+player.on('playSong', (message, queue, song) => {
+    message.channel.send(`${song.name} passe à la radio!`)
+})
+
+client.player = player;
+
 client.config = config;
 
 fs.readdir("./events/", (err, files) => {
